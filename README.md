@@ -1,2 +1,2 @@
 # video-modal
-Video Modal using our fork of Bootstrap3
+YouTube Video Modal using our fork of Bootstrap3
