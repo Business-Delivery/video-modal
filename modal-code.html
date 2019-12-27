@@ -1,6 +1,6 @@
 <!-- Homepage Smallfence/Feature -->
 <div class="col-xs-3 thumb">
-  <a href="#" data-toggle="modal" data-target="#HPHomepagePopup" class="thumbnail" >
+  <a href="#" data-toggle="modal" data-target="#myVideoPopout" class="thumbnail" >
 		<img class= "img-responsive" 
 			 src="https://www.costcobusinessdelivery.com/wcsstore/USBD/Homepage/FY_20/p05/ft-122319-01-foodservicevideo.jpg" 
 			 alt="Food Service">
@@ -11,31 +11,30 @@
 		</div>
 
 <!-- Modal -->
-<div class="modal fade" id="HPHomepagePopup" tabindex="-1" role="dialog" aria-labelledby="HPHomepagePopup" aria-hidden="true">
+<div class="modal fade" id="myVideoPopout" tabindex="-1" role="dialog" aria-labelledby="myVideoPopout" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Food Service</h4>
+        <h4 class="modal-title" id="myModalLabel">Convenience Store</h4>
       </div>
       <div class="modal-body">
-    <iframe width="100%" height="315" src="https://www.youtube.com/embed/dAVp3NjeVsU&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/dAVp3NjeVsU?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
-     
+
     </div>
   </div>
 </div>
-	
-	
+
+
 	<script>$(document).ready(function() {
-  $('#HPHomepagePopup').on('hidden.bs.modal', function() {
+  $('#myVideoPopout').on('hidden.bs.modal', function() {
     var $this = $(this).find('iframe'),
       tempSrc = $this.attr('src');
     $this.attr('src', "");
     $this.attr('src', tempSrc);
   });
-
-  $('#HPHomepagePopup').on('hidden.bs.modal', function() {
+  $('#myVideoPopout').on('hidden.bs.modal', function() {
     var html5Video = document.getElementById("htmlVideo");
     if (html5Video != null) {
       html5Video.pause();
@@ -43,6 +42,6 @@
     }
   });
 });</script>
-	
-	
+
+
 </div>
